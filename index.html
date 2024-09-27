@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语料库</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>语料库</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="搜索关键词">
+            <select id="category">
+                <option value="all">全部</option>
+                <option value="metaphor">隐喻</option>
+                <option value="non-metaphor">非隐喻</option>
+            </select>
+        </div>
+        <table id="corpus-table">
+            <thead>
+                <tr>
+                    <th>语料</th>
+                    <th>是否隐喻</th>
+                    <th>源域</th>
+                    <th>目标域</th>
+                </tr>
+            </thead>
+            <tbody id="corpus-list"></tbody>
+        </table>
+    </div>
+    <script src="corpus_data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
